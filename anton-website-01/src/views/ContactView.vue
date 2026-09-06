@@ -2,8 +2,8 @@
 import BaseButton from '../components/ui/BaseButton.vue'
 import SectionHeading from '../components/ui/SectionHeading.vue'
 
-const githubUrl = 'https://github.com/YOUR-GITHUB-USERNAME'
-const linkedinUrl = 'https://linkedin.com/in/YOUR-LINKEDIN'
+const githubUrl = 'https://github.com/JackR1p'
+const linkedinUrl = 'https://www.linkedin.com/in/anton-kolesnikov-294a6316b/'
 </script>
 
 <template>

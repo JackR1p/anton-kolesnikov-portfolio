@@ -13,7 +13,7 @@ export const projects: Project[] = [
       'Spring Boot',
       'JWT',
     ],
-    githubUrl: 'https://github.com/YOUR-GITHUB-USERNAME',
+    githubUrl: 'https://github.com/JackR1p',
     featured: true,
   },
 
@@ -29,7 +29,7 @@ export const projects: Project[] = [
       'Pinia',
       'Cloudflare',
     ],
-    githubUrl: 'https://github.com/YOUR-GITHUB-USERNAME',
+    githubUrl: 'https://github.com/JackR1p',
     liveUrl: 'https://antonkolesnikov.com',
     featured: true,
   },
@@ -44,7 +44,7 @@ export const projects: Project[] = [
       'Java',
       'Spring Boot',
     ],
-    githubUrl: 'https://github.com/YOUR-GITHUB-USERNAME',
+    githubUrl: 'https://github.com/JackR1p',
     featured: false,
   },
 ]
