@@ -3,16 +3,9 @@ import type { Project } from '../types/Project'
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Polling Application',
-    description:
-      'A full-stack polling platform featuring authentication, role-based access control and administrative functionality.',
-    technologies: [
-      'Angular',
-      'TypeScript',
-      'Java',
-      'Spring Boot',
-      'JWT',
-    ],
+    title: 'Getting Hired at TecKonzept',
+    description: 'Learning Vue and improving my skills by creating Projects',
+    technologies: ['Vue', 'TypeScript', 'Java', 'Spring Boot', 'JWT'],
     githubUrl: 'https://github.com/JackR1p',
     featured: true,
   },
@@ -22,14 +15,8 @@ export const projects: Project[] = [
     title: 'Developer Portfolio',
     description:
       'My personal developer portfolio built with Vue 3, TypeScript and Vite and deployed through Cloudflare.',
-    technologies: [
-      'Vue',
-      'TypeScript',
-      'Vite',
-      'Pinia',
-      'Cloudflare',
-    ],
-    githubUrl: 'https://github.com/JackR1p',
+    technologies: ['Vue', 'TypeScript', 'Vite', 'Pinia', 'Cloudflare'],
+    githubUrl: 'https://github.com/JackR1p/anton-kolesnikov-portfolio',
     liveUrl: 'https://antonkolesnikov.com',
     featured: true,
   },
@@ -38,12 +25,8 @@ export const projects: Project[] = [
     id: 3,
     title: 'Project Three',
     description:
-      'A description of another application demonstrating my software development experience.',
-    technologies: [
-      'React',
-      'Java',
-      'Spring Boot',
-    ],
+      'Placeholder for more projects to come. Check out my Github and LinkedIn for more information about my work and experience.',
+    technologies: ['React', 'Java', 'Spring Boot'],
     githubUrl: 'https://github.com/JackR1p',
     featured: false,
   },
