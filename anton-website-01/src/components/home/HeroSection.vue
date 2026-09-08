@@ -1,34 +1,33 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import BaseButton from '../ui/BaseButton.vue'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="hero">
     <div class="container hero__content">
       <p class="hero__eyebrow">
-        Full Stack Software Developer
+        {{ t('hero.role') }}
       </p>
 
       <h1 class="hero__title">
-        Hi, I'm
-        <span>Anton Kolesnikov.</span>
+        {{ t('hero.greeting') }}
       </h1>
 
       <p class="hero__description">
-        I build modern web applications with a focus on
-        maintainable frontend and full-stack development.
+        {{ t('hero.description') }}
       </p>
 
       <div class="hero__actions">
         <BaseButton to="/projects">
-          View Projects
+          {{ t('hero.projectsButton') }}
         </BaseButton>
 
-        <BaseButton
-          to="/contact"
-          variant="secondary"
-        >
-          Contact Me
+        <BaseButton to="/contact" variant="secondary">
+          {{ t('hero.contactButton') }}
         </BaseButton>
       </div>
     </div>
