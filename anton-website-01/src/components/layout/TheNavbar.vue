@@ -59,8 +59,31 @@ function toggleMenu() {
         >
           {{ themeStore.theme === 'dark' ? '☀️' : '🌙' }}
         </button>
-        <button type="button" class="navbar__language-button" @click="languageStore.toggleLanguage">
-          {{ languageStore.language === 'en' ? 'DE' : 'EN' }}
+        <button
+          type="button"
+          class="language-switch"
+          :aria-label="
+            languageStore.language === 'en'
+              ? 'Switch language to German'
+              : 'Sprache auf Englisch wechseln'
+          "
+          @click="languageStore.toggleLanguage"
+        >
+          <span
+            class="language-switch__option"
+            :class="{ 'language-switch__option--active': languageStore.language === 'en' }"
+          >
+            EN
+          </span>
+
+          <span class="language-switch__divider"></span>
+
+          <span
+            class="language-switch__option"
+            :class="{ 'language-switch__option--active': languageStore.language === 'de' }"
+          >
+            DE
+          </span>
         </button>
       </nav>
     </div>
