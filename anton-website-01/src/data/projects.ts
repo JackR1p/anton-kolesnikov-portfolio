@@ -3,7 +3,7 @@ import type { Project } from '../types/Project'
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Getting Hired at TecKonzept',
+    title: 'Getting Hired',
     description: 'Learning Vue and improving my skills by creating Projects',
     technologies: ['Vue', 'TypeScript', 'Java', 'Spring Boot', 'JWT'],
     githubUrl: 'https://github.com/JackR1p',
