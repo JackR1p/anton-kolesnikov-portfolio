@@ -23,9 +23,9 @@ export const projects: Project[] = [
 
   {
     id: 3,
-    title: 'Project Three',
+    title: 'Exile next step',
     description:
-      'Placeholder for more projects to come. Check out my Github and LinkedIn for more information about my work and experience.',
+      'Project using Path of Exile API to compare your character against a goal and show you the differences and what you need to reach your goal build',
     technologies: ['React', 'Java', 'Spring Boot'],
     githubUrl: 'https://github.com/JackR1p',
     featured: false,
