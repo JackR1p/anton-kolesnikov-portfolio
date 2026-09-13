@@ -10,13 +10,14 @@ const props = withDefaults(
     href?: string
     variant?: Variant
     type?: 'button' | 'submit' | 'reset'
+    download?: boolean
   }>(),
   {
     variant: 'primary',
     type: 'button',
+    download: false,
   },
 )
-
 const componentType = computed(() => {
   if (props.to) {
     return RouterLink
@@ -39,8 +40,9 @@ const componentProperties = computed(() => {
   if (props.href) {
     return {
       href: props.href,
-      target: '_blank',
-      rel: 'noopener noreferrer',
+      download: props.download || undefined,
+      target: props.download ? undefined : '_blank',
+      rel: props.download ? undefined : 'noopener noreferrer',
     }
   }
 

@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { skills } from '../data/skills'
 
 import SectionHeading from '../components/ui/SectionHeading.vue'
+import BaseButton from '../components/ui/BaseButton.vue'
 
 const { t, tm } = useI18n()
 </script>
@@ -49,6 +50,13 @@ const { t, tm } = useI18n()
               </li>
             </ul>
           </section>
+          <BaseButton
+            href="/Anton_Kolesnikov_Softwareentwickler_CV_deutsch.pdf"
+            variant="secondary"
+            download
+          >
+            Lebenslauf herunterladen
+          </BaseButton>
         </div>
       </div>
     </div>
