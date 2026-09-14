@@ -55,7 +55,14 @@ const { t, tm } = useI18n()
             variant="secondary"
             download
           >
-            Lebenslauf herunterladen
+            Download german CV
+          </BaseButton>
+          <BaseButton
+            href="/Anton_Kolesnikov_Software_Developer_CV_eng.pdf"
+            variant="secondary"
+            download
+          >
+            Download english CV
           </BaseButton>
         </div>
       </div>
