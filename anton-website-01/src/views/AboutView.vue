@@ -50,20 +50,23 @@ const { t, tm } = useI18n()
               </li>
             </ul>
           </section>
-          <BaseButton
-            href="/Anton_Kolesnikov_Softwareentwickler_CV_deutsch.pdf"
-            variant="secondary"
-            download
-          >
-            Download german CV
-          </BaseButton>
-          <BaseButton
-            href="/Anton_Kolesnikov_Software_Developer_CV_eng.pdf"
-            variant="secondary"
-            download
-          >
-            Download english CV
-          </BaseButton>
+          <div class="cv-downloads">
+            <BaseButton
+              href="/Anton_Kolesnikov_Softwareentwickler_CV_deutsch.pdf"
+              variant="secondary"
+              download
+            >
+              {{ t('about.cvGerman') }}
+            </BaseButton>
+
+            <BaseButton
+              href="/Anton_Kolesnikov_Software_Developer_CV_eng.pdf"
+              variant="secondary"
+              download
+            >
+              {{ t('about.cvEnglish') }}
+            </BaseButton>
+          </div>
         </div>
       </div>
     </div>

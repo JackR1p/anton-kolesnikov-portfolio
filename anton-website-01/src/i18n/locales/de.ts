@@ -56,5 +56,7 @@ export default {
     frontend: 'Frontend',
     backend: 'Backend',
     tools: 'Tools & Testing',
+    cvGerman: 'Deutschen Lebenslauf herunterladen',
+    cvEnglish: 'Englischen Lebenslauf herunterladen',
   },
 }

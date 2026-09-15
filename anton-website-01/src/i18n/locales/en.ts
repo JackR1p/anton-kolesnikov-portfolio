@@ -56,5 +56,7 @@ export default {
     frontend: 'Frontend',
     backend: 'Backend',
     tools: 'Tools & Testing',
+    cvGerman: 'Download German CV',
+    cvEnglish: 'Download English CV',
   },
 }
