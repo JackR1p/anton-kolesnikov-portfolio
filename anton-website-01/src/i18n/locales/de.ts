@@ -16,17 +16,26 @@ export default {
   },
 
   projects: {
-    eyebrow: 'Portfolio',
-    title: 'Ausgewählte Projekte',
-    description: 'Eine Auswahl an Anwendungen und Projekten, an denen ich gearbeitet habe.',
+    eyebrow: 'Meine Arbeit',
+    title: 'Projekte',
+    description: 'Eine Auswahl an Anwendungen und technischen Projekten, die ich entwickelt habe.',
+
+    featuredTitle: 'Ausgewählte Projekte',
+    featuredDescription: 'Eine Auswahl an Anwendungen und Projekten, an denen ich gearbeitet habe.',
+
     viewAll: 'Alle Projekte ansehen',
     liveDemo: 'Live-Demo',
+    sourceCode: 'Quellcode',
   },
 
   contact: {
     eyebrow: 'Kontakt',
     title: 'Kontakt aufnehmen',
-    description: 'Ich bin offen für Softwareentwicklungspositionen und interessante Projekte.',
+    description:
+      'Ich bin offen für Softwareentwicklungspositionen, Kooperationen und interessante Projekte.',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
+    email: 'E-Mail senden',
   },
   about: {
     eyebrow: 'Über mich',
@@ -58,5 +67,25 @@ export default {
     tools: 'Tools & Testing',
     cvGerman: 'Deutschen Lebenslauf herunterladen',
     cvEnglish: 'Englischen Lebenslauf herunterladen',
+  },
+
+  projectItems: {
+    gettingHired: {
+      title: 'Getting Hired',
+      description:
+        'Ein Projekt zum Erlernen von Vue und zur Weiterentwicklung meiner Kenntnisse durch die Umsetzung praktischer Anwendungen.',
+    },
+
+    portfolio: {
+      title: 'Entwickler-Portfolio',
+      description:
+        'Mein persönliches Entwickler-Portfolio, erstellt mit Vue 3, TypeScript und Vite und über Cloudflare bereitgestellt.',
+    },
+
+    exileNextStep: {
+      title: 'Exile Next Step',
+      description:
+        'Eine Anwendung, die die Path-of-Exile-API verwendet, um einen Charakter mit einem Ziel-Build zu vergleichen und notwendige Verbesserungen aufzuzeigen.',
+    },
   },
 }

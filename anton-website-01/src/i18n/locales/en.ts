@@ -17,16 +17,25 @@ export default {
 
   projects: {
     eyebrow: 'Portfolio',
-    title: 'Featured Projects',
-    description: "A selection of applications and projects I've worked on.",
+    title: 'Projects',
+    description: 'A selection of applications and technical projects I have built.',
+
+    featuredTitle: 'Featured Projects',
+    featuredDescription: "A selection of applications and projects I've worked on.",
+
     viewAll: 'View All Projects',
     liveDemo: 'Live Demo',
+    sourceCode: 'Source Code',
   },
 
   contact: {
     eyebrow: 'Contact',
     title: "Let's get in touch.",
-    description: "I'm open to software development opportunities and interesting projects.",
+    description:
+      "I'm open to software development opportunities, collaborations and interesting projects.",
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
+    email: 'Send Email',
   },
 
   about: {
@@ -58,5 +67,25 @@ export default {
     tools: 'Tools & Testing',
     cvGerman: 'Download German CV',
     cvEnglish: 'Download English CV',
+  },
+
+  projectItems: {
+    gettingHired: {
+      title: 'Getting Hired',
+      description:
+        'A project focused on learning Vue and improving my development skills by building practical applications.',
+    },
+
+    portfolio: {
+      title: 'Developer Portfolio',
+      description:
+        'My personal developer portfolio built with Vue 3, TypeScript and Vite and deployed through Cloudflare.',
+    },
+
+    exileNextStep: {
+      title: 'Exile Next Step',
+      description:
+        'An application using the Path of Exile API to compare a character against a target build and identify the upgrades required to reach it.',
+    },
   },
 }

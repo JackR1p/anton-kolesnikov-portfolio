@@ -1,32 +1,31 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 import BaseButton from '../components/ui/BaseButton.vue'
 import SectionHeading from '../components/ui/SectionHeading.vue'
 
+const { t } = useI18n()
+
 const githubUrl = 'https://github.com/JackR1p'
-const linkedinUrl = 'https://www.linkedin.com/in/anton-kolesnikov-294a6316b/'
+const linkedinUrl = 'YOUR_LINKEDIN_URL'
 </script>
 
 <template>
   <section class="section page">
     <div class="container contact">
       <SectionHeading
-        eyebrow="Contact"
-        title="Let's get in touch."
-        description="I'm open to software development opportunities and interesting projects."
+        :eyebrow="t('contact.eyebrow')"
+        :title="t('contact.title')"
+        :description="t('contact.description')"
       />
 
       <div class="contact__actions">
-        <BaseButton
-          :href="linkedinUrl"
-        >
-          LinkedIn
+        <BaseButton :href="linkedinUrl">
+          {{ t('contact.linkedin') }}
         </BaseButton>
 
-        <BaseButton
-          :href="githubUrl"
-          variant="secondary"
-        >
-          GitHub
+        <BaseButton :href="githubUrl" variant="secondary">
+          {{ t('contact.github') }}
         </BaseButton>
       </div>
     </div>

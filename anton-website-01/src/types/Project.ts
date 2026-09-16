@@ -1,7 +1,7 @@
 export interface Project {
   id: number
-  title: string
-  description: string
+  titleKey: string
+  descriptionKey: string
   technologies: string[]
   image?: string
   githubUrl?: string
