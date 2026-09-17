@@ -88,4 +88,7 @@ export default {
         'Eine Anwendung, die die Path-of-Exile-API verwendet, um einen Charakter mit einem Ziel-Build zu vergleichen und notwendige Verbesserungen aufzuzeigen.',
     },
   },
+  footer: {
+    builtWith: 'Erstellt mit Vue 3 und TypeScript',
+  },
 }

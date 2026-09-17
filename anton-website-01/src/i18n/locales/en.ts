@@ -88,4 +88,7 @@ export default {
         'An application using the Path of Exile API to compare a character against a target build and identify the upgrades required to reach it.',
     },
   },
+  footer: {
+    builtWith: 'Built with Vue 3 and TypeScript',
+  },
 }
