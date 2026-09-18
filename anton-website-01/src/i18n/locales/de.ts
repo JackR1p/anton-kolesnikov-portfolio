@@ -13,6 +13,8 @@ export default {
       'Ich entwickle moderne Webanwendungen mit Fokus auf wartbare Frontend- und Fullstack-Entwicklung.',
     projectsButton: 'Projekte ansehen',
     contactButton: 'Kontakt',
+    location: 'München, Deutschland',
+    availability: 'Offen für Remote- und Hybrid-Positionen in der Softwareentwicklung',
   },
 
   projects: {

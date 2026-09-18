@@ -20,6 +20,11 @@ const { t } = useI18n()
       <p class="hero__description">
         {{ t('hero.description') }}
       </p>
+      <div class="hero__details">
+        <span class="hero__detail"> 📍 {{ t('hero.location') }} </span>
+
+        <span class="hero__detail"> 💼 {{ t('hero.availability') }} </span>
+      </div>
 
       <div class="hero__actions">
         <BaseButton to="/projects">

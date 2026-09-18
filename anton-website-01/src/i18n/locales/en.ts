@@ -13,6 +13,8 @@ export default {
       'I build modern web applications with a focus on maintainable frontend and full-stack development.',
     projectsButton: 'View Projects',
     contactButton: 'Contact Me',
+    location: 'Munich, Germany',
+    availability: 'Open to remote and hybrid software development opportunities',
   },
 
   projects: {
