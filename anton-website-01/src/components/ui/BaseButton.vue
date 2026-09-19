@@ -38,11 +38,13 @@ const componentProperties = computed(() => {
   }
 
   if (props.href) {
+    const isExternalLink = props.href.startsWith('http://') || props.href.startsWith('https://')
+
     return {
       href: props.href,
-      download: props.download || undefined,
-      target: props.download ? undefined : '_blank',
-      rel: props.download ? undefined : 'noopener noreferrer',
+      download: props.download ? '' : undefined,
+      target: !props.download && isExternalLink ? '_blank' : undefined,
+      rel: !props.download && isExternalLink ? 'noopener noreferrer' : undefined,
     }
   }
 

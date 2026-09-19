@@ -27,6 +27,10 @@ const linkedinUrl = 'YOUR_LINKEDIN_URL'
         <BaseButton :href="githubUrl" variant="secondary">
           {{ t('contact.github') }}
         </BaseButton>
+
+        <BaseButton href="mailto:akoles1409@gmail.com" variant="primary">
+          {{ t('contact.email') }}
+        </BaseButton>
       </div>
     </div>
   </section>
