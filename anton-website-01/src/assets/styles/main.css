@@ -413,4 +413,8 @@
 
     font-size: 0.95rem;
   }
+
+  .router-link-active {
+    color: var(--color-primary);
+  }
 }
