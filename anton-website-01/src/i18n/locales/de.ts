@@ -93,4 +93,9 @@ export default {
   footer: {
     builtWith: 'Erstellt mit Vue 3 und TypeScript',
   },
+  notFound: {
+    title: 'Seite nicht gefunden',
+    description: 'Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.',
+    backHome: 'Zurück zur Startseite',
+  },
 }

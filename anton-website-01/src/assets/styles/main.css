@@ -417,4 +417,48 @@
   .router-link-active {
     color: var(--color-primary);
   }
+
+  .not-found {
+    min-height: calc(100vh - 160px);
+
+    display: flex;
+    align-items: center;
+  }
+
+  .not-found__content {
+    max-width: 650px;
+
+    text-align: center;
+  }
+
+  .not-found__code {
+    margin-bottom: 0.5rem;
+
+    color: var(--color-primary);
+
+    font-size: clamp(5rem, 15vw, 9rem);
+    font-weight: 800;
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+  }
+
+  .not-found__title {
+    margin-bottom: 1rem;
+
+    color: var(--color-text);
+
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .not-found__description {
+    max-width: 500px;
+
+    margin: 0 auto 2rem;
+
+    color: var(--color-text-secondary);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
 }

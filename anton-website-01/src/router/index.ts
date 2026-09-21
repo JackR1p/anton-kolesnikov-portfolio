@@ -14,6 +14,7 @@ const router = createRouter({
         title: 'Anton Kolesnikov | Software Developer',
       },
     },
+
     {
       path: '/about',
       name: 'about',
@@ -22,6 +23,7 @@ const router = createRouter({
         title: 'About | Anton Kolesnikov',
       },
     },
+
     {
       path: '/projects',
       name: 'projects',
@@ -30,6 +32,7 @@ const router = createRouter({
         title: 'Projects | Anton Kolesnikov',
       },
     },
+
     {
       path: '/contact',
       name: 'contact',
@@ -38,20 +41,24 @@ const router = createRouter({
         title: 'Contact | Anton Kolesnikov',
       },
     },
+
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../views/NotFoundView.vue'),
+      meta: {
+        title: '404 | Anton Kolesnikov',
+      },
+    },
   ],
 
   scrollBehavior() {
-    return {
-      top: 0,
-    }
+    return { top: 0 }
   },
 })
 
 router.afterEach((to) => {
-  document.title =
-    typeof to.meta.title === 'string'
-      ? to.meta.title
-      : 'Anton Kolesnikov'
+  document.title = typeof to.meta.title === 'string' ? to.meta.title : 'Anton Kolesnikov'
 })
 
 export default router
