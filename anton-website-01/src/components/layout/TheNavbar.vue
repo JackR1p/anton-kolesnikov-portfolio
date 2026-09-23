@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 import { useThemeStore } from '../../stores/theme'
-import { useI18n } from 'vue-i18n'
 import { useLanguageStore } from '../../stores/language'
 
 const menuOpen = ref(false)
 
 const themeStore = useThemeStore()
-const { t } = useI18n()
 const languageStore = useLanguageStore()
+
+const { t } = useI18n()
 
 function closeMenu() {
   menuOpen.value = false
@@ -23,42 +25,43 @@ function toggleMenu() {
 <template>
   <header class="navbar">
     <div class="navbar__inner container">
-      <RouterLink to="/" class="navbar__logo" @click="closeMenu"> Anton Kolesnikov </RouterLink>
-
-      <button
-        class="navbar__menu-button"
-        type="button"
-        aria-label="Toggle navigation"
-        @click="toggleMenu"
+      <!-- Logo / Home -->
+      <RouterLink
+        to="/"
+        class="navbar__logo"
+        aria-label="Anton Kolesnikov - Home"
+        @click="closeMenu"
       >
-        ☰
-      </button>
+        Anton Kolesnikov
+      </RouterLink>
 
-      <nav class="navbar__navigation" :class="{ 'navbar__navigation--open': menuOpen }">
-        <RouterLink to="/">
+      <!-- Navigation -->
+      <nav
+        id="main-navigation"
+        class="navbar__navigation"
+        :class="{ 'navbar__navigation--open': menuOpen }"
+        :aria-label="languageStore.language === 'en' ? 'Main navigation' : 'Hauptnavigation'"
+      >
+        <RouterLink to="/" @click="closeMenu">
           {{ t('navigation.home') }}
         </RouterLink>
 
-        <RouterLink to="/about">
+        <RouterLink to="/about" @click="closeMenu">
           {{ t('navigation.about') }}
         </RouterLink>
 
-        <RouterLink to="/projects">
+        <RouterLink to="/projects" @click="closeMenu">
           {{ t('navigation.projects') }}
         </RouterLink>
 
-        <RouterLink to="/contact">
+        <RouterLink to="/contact" @click="closeMenu">
           {{ t('navigation.contact') }}
         </RouterLink>
+      </nav>
 
-        <button
-          class="navbar__theme-button"
-          type="button"
-          aria-label="Toggle color theme"
-          @click="themeStore.toggleTheme"
-        >
-          {{ themeStore.theme === 'dark' ? '☀️' : '🌙' }}
-        </button>
+      <!-- Navbar controls -->
+      <div class="navbar__controls">
+        <!-- Language switch -->
         <button
           type="button"
           class="language-switch"
@@ -71,21 +74,59 @@ function toggleMenu() {
         >
           <span
             class="language-switch__option"
-            :class="{ 'language-switch__option--active': languageStore.language === 'en' }"
+            :class="{
+              'language-switch__option--active': languageStore.language === 'en',
+            }"
           >
             EN
           </span>
 
-          <span class="language-switch__divider"></span>
-
           <span
             class="language-switch__option"
-            :class="{ 'language-switch__option--active': languageStore.language === 'de' }"
+            :class="{
+              'language-switch__option--active': languageStore.language === 'de',
+            }"
           >
             DE
           </span>
         </button>
-      </nav>
+
+        <!-- Theme switch -->
+        <button
+          class="navbar__theme-button"
+          type="button"
+          :aria-label="
+            themeStore.theme === 'dark'
+              ? languageStore.language === 'en'
+                ? 'Switch to light mode'
+                : 'Zum hellen Modus wechseln'
+              : languageStore.language === 'en'
+                ? 'Switch to dark mode'
+                : 'Zum dunklen Modus wechseln'
+          "
+          @click="themeStore.toggleTheme"
+        >
+          <span aria-hidden="true">
+            {{ themeStore.theme === 'dark' ? '☀️' : '🌙' }}
+          </span>
+        </button>
+
+        <!-- Mobile menu -->
+        <button
+          class="navbar__menu-button"
+          type="button"
+          aria-controls="main-navigation"
+          :aria-expanded="menuOpen"
+          :aria-label="
+            languageStore.language === 'en'
+              ? 'Toggle navigation'
+              : 'Navigation öffnen oder schließen'
+          "
+          @click="toggleMenu"
+        >
+          ☰
+        </button>
+      </div>
     </div>
   </header>
 </template>
