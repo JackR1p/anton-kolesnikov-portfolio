@@ -89,6 +89,12 @@ export default {
       description:
         'Eine Anwendung, die die Path-of-Exile-API verwendet, um einen Charakter mit einem Ziel-Build zu vergleichen und notwendige Verbesserungen aufzuzeigen.',
     },
+
+    horrorGame: {
+      title: 'Horror-Spiel-Prototyp (in Vorbereitung)',
+      description:
+        'Ein kleiner Horror-Spiel-Prototyp mit Fokus auf Atmosphäre, Erkundung und Gameplay-Mechaniken.',
+    },
   },
   footer: {
     builtWith: 'Erstellt mit Vue 3 und TypeScript',

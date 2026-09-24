@@ -89,6 +89,12 @@ export default {
       description:
         'An application using the Path of Exile API to compare a character against a target build and identify the upgrades required to reach it.',
     },
+
+    horrorGame: {
+      title: 'Horror Game Prototype (upcoming)',
+      description:
+        'A small horror game prototype focused on atmosphere, exploration and gameplay mechanics.',
+    },
   },
   footer: {
     builtWith: 'Built with Vue 3 and TypeScript',

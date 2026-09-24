@@ -28,4 +28,13 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/JackR1p',
     featured: false,
   },
+
+  {
+    id: 4,
+    titleKey: 'projectItems.horrorGame.title',
+    descriptionKey: 'projectItems.horrorGame.description',
+    technologies: ['Godot', 'GDScript'],
+    githubUrl: 'https://github.com/JackR1p',
+    featured: false,
+  },
 ]
