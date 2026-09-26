@@ -95,6 +95,12 @@ export default {
       description:
         'Ein kleiner Horror-Spiel-Prototyp mit Fokus auf Atmosphäre, Erkundung und Gameplay-Mechaniken.',
     },
+
+    unityGame: {
+      title: 'Unity Minigame (upcoming)',
+      description:
+        'A small 3D minigame built with Unity and C#, featuring custom assets created in Blender and a focus on learning core game development mechanics.',
+    },
   },
   footer: {
     builtWith: 'Erstellt mit Vue 3 und TypeScript',

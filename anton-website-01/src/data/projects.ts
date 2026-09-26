@@ -37,4 +37,13 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/JackR1p',
     featured: false,
   },
+
+  {
+    id: 5,
+    titleKey: 'projectItems.unityGame.title',
+    descriptionKey: 'projectItems.unityGame.description',
+    technologies: ['Unity', 'Blender', 'C#'],
+    githubUrl: 'https://github.com/JackR1p',
+    featured: false,
+  },
 ]
