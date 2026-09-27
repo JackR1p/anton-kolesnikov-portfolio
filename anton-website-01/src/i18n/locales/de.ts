@@ -110,4 +110,8 @@ export default {
     description: 'Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben.',
     backHome: 'Zurück zur Startseite',
   },
+
+  accessibility: {
+    skipToContent: 'Zum Inhalt springen',
+  },
 }

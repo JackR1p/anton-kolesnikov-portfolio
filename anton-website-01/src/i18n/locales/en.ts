@@ -111,4 +111,8 @@ export default {
     description: 'The page you are looking for does not exist or may have been moved.',
     backHome: 'Back to Home',
   },
+
+  accessibility: {
+    skipToContent: 'Skip to content',
+  },
 }
