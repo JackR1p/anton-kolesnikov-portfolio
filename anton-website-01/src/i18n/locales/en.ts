@@ -99,7 +99,7 @@ export default {
     unityGame: {
       title: 'Unity Minigame (upcoming)',
       description:
-        'A small 3D minigame built with Unity and C#, featuring custom assets created in Blender and a focus on learning core game development mechanics.',
+        'A small 3D minigame built with Unity and C#, featuring custom assets created in Blender and a focus on learning core game development mechanics. The game is designed to be a fun and interactive experience, with a focus on gameplay mechanics and interactivity.',
     },
   },
   footer: {

@@ -99,7 +99,7 @@ export default {
     unityGame: {
       title: 'Unity Minigame (upcoming)',
       description:
-        'Ein kleines Unity-Minispiel, das sich auf Gameplay-Mechaniken und Interaktivität konzentriert.',
+        'Ein kleines Unity-Minispiel, das sich auf Gameplay-Mechaniken und Interaktivität konzentriert. Es wird in C# entwickelt und ist für die Veröffentlichung auf vorgesehen.',
     },
   },
   footer: {
