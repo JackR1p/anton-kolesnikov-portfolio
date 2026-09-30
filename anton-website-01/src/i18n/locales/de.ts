@@ -101,6 +101,12 @@ export default {
       description:
         'Ein kleines Unity-Minispiel, das sich auf Gameplay-Mechaniken und Interaktivität konzentriert. Es wird in C# entwickelt und ist für die Veröffentlichung auf vorgesehen.',
     },
+
+    lowCodeApp: {
+      title: 'Low-Code-Webanwendung',
+      description:
+        'Eine mit OutSystems entwickelte Webanwendung zum Erlernen von Low-Code-Entwicklung, Anwendungslogik, Datenmodellierung, UI-Entwicklung und der Integration externer Dienste.',
+    },
   },
   footer: {
     builtWith: 'Erstellt mit Vue 3 und TypeScript',

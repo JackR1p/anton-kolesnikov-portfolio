@@ -46,4 +46,12 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/JackR1p',
     featured: false,
   },
+
+  {
+    id: 6,
+    titleKey: 'projectItems.lowCodeApp.title',
+    descriptionKey: 'projectItems.lowCodeApp.description',
+    technologies: ['OutSystems', 'Low-Code', 'REST API', 'SQL'],
+    featured: false,
+  },
 ]

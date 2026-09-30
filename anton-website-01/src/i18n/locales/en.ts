@@ -101,6 +101,12 @@ export default {
       description:
         'A small 3D minigame built with Unity and C#, featuring custom assets created in Blender and a focus on learning core game development mechanics. The game is designed to be a fun and interactive experience, with a focus on gameplay mechanics and interactivity.',
     },
+
+    lowCodeApp: {
+      title: 'Low-Code Web Application',
+      description:
+        'A web application built with OutSystems to explore low-code development, application logic, data modeling, UI development and integration with external services.',
+    },
   },
   footer: {
     builtWith: 'Built with Vue 3 and TypeScript',
