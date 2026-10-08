@@ -24,8 +24,8 @@ export const projects: Project[] = [
     id: 3,
     titleKey: 'projectItems.exileNextStep.title',
     descriptionKey: 'projectItems.exileNextStep.description',
-    technologies: ['React', 'Java', 'Spring Boot'],
-    githubUrl: 'https://github.com/JackR1p',
+    technologies: ['Vue', 'TypeScript', 'Java', 'Spring Boot'],
+    githubUrl: 'https://github.com/JackR1p/path-of-exile-character-comparison',
     featured: false,
   },
 
@@ -52,6 +52,7 @@ export const projects: Project[] = [
     titleKey: 'projectItems.lowCodeApp.title',
     descriptionKey: 'projectItems.lowCodeApp.description',
     technologies: ['OutSystems', 'Low-Code', 'REST API', 'SQL'],
+    githubUrl: 'https://github.com/JackR1p/techniker-auftragsmanager',
     featured: false,
   },
 ]

@@ -73,9 +73,9 @@ export default {
 
   projectItems: {
     gettingHired: {
-      title: 'Getting Hired',
+      title: 'My GitHub Profile',
       description:
-        'A project focused on learning Vue and improving my development skills by building practical applications.',
+        'A direct link to my GitHub profile where you can view my projects, contributions, and activities.',
     },
 
     portfolio: {
